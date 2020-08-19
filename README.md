@@ -41,6 +41,9 @@ The result of the algorithm has generated subsets of communities, this informati
 
 On the generated image we can see the loaded graph and detected communities colored in different colors.
 
+The result with 200 vertices will generate this graph: <br />
+![alt text](https://github.com/RussellSk/social_network_capstone/blob/master/graph.png?raw=true)
+
 ###### Algorithm analysis
 
 It takes a near-linear time for the algorithm to run to its completion. Initializing every node with unique labels requires O(n) time. Each iteration of the label propagation algorithm takes linear time in the number of edges (O(m)). At each node x, we first group the neighbors according to their labels (O(dx)). We then pick the group of maximum size and assign its label to x, requiring a worst-case time of O(dx). This process is repeated at all nodes and hence an overall time is O(m) for each iteration.
