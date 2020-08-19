@@ -15,7 +15,7 @@ public class application {
         // Create new graph with Facebook data
         // LoadAmount parameter let us restrict load a whole file, because process of rendering graph to image
         // consume a lot of machine resources
-        CommunityGraph communityGraph = new CommunityGraph(new GraphLoader("data/socfb-American75.mtx", 1000));
+        CommunityGraph communityGraph = new CommunityGraph(new GraphLoader("data/socfb-American75.mtx", 200));
 
         int communities = communityGraph.detectCommunities();
         System.out.println("Communities found: " + communities);
